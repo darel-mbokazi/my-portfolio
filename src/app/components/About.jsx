@@ -8,8 +8,8 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <div className="flex justify-between gap-5 list-disc pl-2">
-        <div>
+      <div className="flex max-sm:flex-wrap justify-between gap-5 max-sm:gap-0 list-disc pl-2">
+        <div className="max-sm:w-full max-sm:pb-5">
           <h2 className="bg-gold text-center rounded-md py-1 mb-3">Frontend</h2>
           <ul>
             <li>HTML</li>
@@ -21,8 +21,8 @@ const TAB_DATA = [
             <li>Tailwind CSS</li>
           </ul>
         </div>
-        <hr className="border-[0.5px] h-52"/>
-        <div>
+        <hr className="border-[0.5px] h-52 max-sm:border-none"/>
+        <div className="max-sm:w-full max-sm:pb-5">
           <h2 className="bg-gold text-center rounded-md py-1 mb-3">Backend</h2>
           <ul>
             <li>C#</li>
@@ -34,8 +34,8 @@ const TAB_DATA = [
             <li>MongoDB</li>
           </ul>
         </div>
-        <hr className="border-[0.5px] h-52" />
-        <div>
+        <hr className="border-[0.5px] h-52 max-sm:border-none" />
+        <div className="max-sm:w-full">
           <h2 className="bg-gold text-center rounded-md py-1 mb-3">Other</h2>
           <ul>
             <li>AWS Cloud</li>
@@ -85,12 +85,12 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-white max-sm:pt-20 max-lg:pt-20" id="about">
       <h2 className="text-4xl font-bold text-gold mb-4 text-center">About Me</h2>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-me-image.webp" alt="about me image" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <p className="text-base lg:text-lg">
+          <p className="text-base max-sm:text-justify lg:text-lg">
             I am a full-stack web developer, I have experience working with C#, ASP.NET Core, Entity Framework, and SQL Server. Additionally, I possess practical knowledge of front-end technologies such as HTML, CSS, JavaScript, and React. My expertise also includes database management, cloud deployment, and DevOps practices.
           </p>
           <div className="flex flex-row justify-start mt-8">

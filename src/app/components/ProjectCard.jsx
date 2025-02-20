@@ -28,7 +28,7 @@ const ProjectCard = ({ imgUrl, title, techUsed, gitUrl, previewUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 py-6 flex-grow h-40 overflow-hidden">
+      <div className="text-white rounded-b-xl mt-3 py-6 flex-grow h-40 max-sm:h-auto max-lg:h-72 overflow-hidden">
         <h5 className="text-xl font-semibold mb-2 text-center">{title}</h5>
         <div className="flex flex-wrap gap-2 mt-3">
           {technologies.map((tech, index) => (

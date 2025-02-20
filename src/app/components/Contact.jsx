@@ -8,7 +8,7 @@ const EmailSection = () => {
       className=""
     >
       <h2 className="text-4xl font-bold text-gold mt-20 text-center">Contact</h2>
-      <div className="grid md:grid-cols-2 my-12 md:my-12 py-10 gap-4 relative ">
+      <div className="grid md:grid-cols-2 md:my-12 py-10 gap-4 relative ">
         <div >
           <div className="">
             <div className="grid">
@@ -30,7 +30,7 @@ const EmailSection = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="max-sm:mt-10">
           <form className="flex flex-col" action="https://formspree.io/f/myzkdojb" method="POST">
             <div className="mb-6">
               <label

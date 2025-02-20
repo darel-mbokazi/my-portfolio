@@ -11,11 +11,20 @@ const projectsData = [
     techUsed: "ASP.NET Core 8 MVC, Entity Framework, SQL Server, QuestPDF",
     image: "/images/projects/quickresume.png",
     tag: ["All", "AspNet"],
-    gitUrl: "",
+    gitUrl: "https://github.com/Darel7sm/QuickResume",
     previewUrl: "",
   },
   {
     id: 2,
+    title: "Product Listing & Management",
+    techUsed: "ASP.NET Core 8 Web API, Entity Framework, SQL Server, React, Typescript",
+    image: "/images/projects/product-list.png",
+    tag: ["All", "AspNet"],
+    gitUrl: "https://github.com/Darel7sm/Product-Listing-Management",
+    previewUrl: "",
+  },
+  {
+    id: 3,
     title: "Private Property Frontend Clone",
     techUsed: "React, Tailwind CSS, JavaScript",
     image: "/images/projects/private_property.png",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "https://private-property-clone.firebaseapp.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Web Hosting App",
     techUsed: "React, Context API, Express.js, Stripe, Cloudmersive API, Whois API",
     image: "/images/projects/wh-img-1.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://web-hosting-react-app.firebaseapp.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Izinganekwane (The Folktales)",
     techUsed: "Vite, React, Typescript, Tailwind CSS, Express, MongoDB",
     image: "/images/projects/folktales.png",
@@ -66,7 +75,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-gold mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 max-sm:grid">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
