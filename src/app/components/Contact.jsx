@@ -1,12 +1,9 @@
 import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 
-const EmailSection = () => {
+const Contact = () => {
 
   return (
-    <section
-      id="contact"
-      className=""
-    >
+    <section id="contact">
       <h2 className="text-4xl font-bold text-gold mt-20 text-center">Contact</h2>
       <div className="grid md:grid-cols-2 md:my-12 py-10 gap-4 relative ">
         <div >
@@ -21,10 +18,10 @@ const EmailSection = () => {
               </div>
             </div>
             <div className="socials flex flex-row gap-2">
-              <a href="https://github.com/Darel7sm" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/darel-mbokazi" target="_blank" rel="noopener noreferrer">
                 <FaSquareGithub className="w-6 h-6 hover:text-[#cbb36aa4] hover:transition-transform" />
               </a>
-              <a href="https://linkedin.com/in/siyabonga-darel-mbokazi-583283214" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/darel-mbokazi/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="w-6 h-6 hover:text-[#cbb36aa4]" />
               </a>
             </div>
@@ -91,4 +88,4 @@ const EmailSection = () => {
   );
 };
 
-export default EmailSection;
+export default Contact;

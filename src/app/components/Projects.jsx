@@ -11,7 +11,7 @@ const projectsData = [
     techUsed: "ASP.NET Core 8 MVC, Entity Framework, SQL Server, QuestPDF",
     image: "/images/projects/quickresume.png",
     tag: ["All", "AspNet"],
-    gitUrl: "https://github.com/Darel7sm/QuickResume",
+    gitUrl: "https://github.com/darel-mbokazi/QuickResume",
     previewUrl: "",
   },
   {
@@ -20,7 +20,7 @@ const projectsData = [
     techUsed: "ASP.NET Core 8 Web API, Entity Framework, SQL Server, React, Typescript",
     image: "/images/projects/product-list.png",
     tag: ["All", "AspNet"],
-    gitUrl: "https://github.com/Darel7sm/Product-Listing-Management",
+    gitUrl: "https://github.com/darel-mbokazi/Product-Listing-Management",
     previewUrl: "",
   },
   {
@@ -29,7 +29,7 @@ const projectsData = [
     techUsed: "React, Tailwind CSS, JavaScript",
     image: "/images/projects/private_property.png",
     tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/Darel7sm/Private-Property-Clone-App",
+    gitUrl: "https://github.com/darel-mbokazi/Private-Property-Clone-App",
     previewUrl: "https://private-property-clone.firebaseapp.com/",
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     techUsed: "Vite, React, Typescript, Tailwind CSS, Express, MongoDB",
     image: "/images/projects/folktales.png",
     tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/Darel7sm/izinganekwane_folktales",
+    gitUrl: "https://github.com/darel-mbokazi/izinganekwane_folktales",
     previewUrl: "https://izinganekwane-folktales.vercel.app",
   },
 ];
@@ -72,7 +72,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-gold mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-gold mt-16 mb-8 md:mb-12">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6 max-sm:grid">

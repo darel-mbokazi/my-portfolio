@@ -16,9 +16,9 @@ const TAB_DATA = [
             <li>CSS</li>
             <li>JavaScript</li>
             <li>React.js</li>
+            <li>Vue.js</li>
             <li>Next.js</li>
             <li>Redux</li>
-            <li>Tailwind CSS</li>
           </ul>
         </div>
         <hr className="border-[0.5px] h-52 max-sm:border-none"/>
