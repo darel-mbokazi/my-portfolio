@@ -102,7 +102,7 @@ const AboutSection = () => {
             Entity Framework, and SQL Server for backend development. On the
             frontend, I specialize in HTML, CSS, JavaScript, Vue.js, and
             React.js to build responsive and interactive web applications.
-            <br/> 
+            <br/> <br/>
             With professional experience in JavaScript development, I have worked
             extensively with HTML, CSS, JavaScript, React.js, HubSpot,
             WordPress, and Wix. Additionally, I have hands-on experience in

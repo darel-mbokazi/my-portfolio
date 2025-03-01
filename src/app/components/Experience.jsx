@@ -56,9 +56,9 @@ const Experience = () => {
                           {exp.position}
                         </h3>
                         {exp.duties && exp.duties.length > 0 && (
-                          <ul className="mt-2 text-gray-300 list-disc list-inside">
+                          <ul className="mt-2 ml-0 pl-4 text-gray-300 list-disc list-inside">
                             {exp.duties.map((duty, index) => (
-                              <li key={index}>{duty}</li>
+                              <li className='pb-3 pl-4' key={index}>{duty}</li>
                             ))}
                           </ul>
                         )}
