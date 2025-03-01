@@ -86,34 +86,48 @@ const AboutSection = () => {
 
   return (
     <section className="text-white max-sm:pt-20 max-lg:pt-20" id="about">
-      <h2 className="text-4xl font-bold text-gold mb-4 text-center">About Me</h2>
+      <h2 className="text-4xl font-bold text-gold mb-4 text-center">
+        About Me
+      </h2>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-me-image.webp" alt="about me image" width={500} height={500} />
+        <Image
+          src="/images/about-me-image.webp"
+          alt="about me image"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <p className="text-base max-sm:text-justify lg:text-lg">
-            I am a full-stack web developer, I have experience working with C#, ASP.NET Core, Entity Framework, and SQL Server. Additionally, I possess practical knowledge of front-end technologies such as HTML, CSS, JavaScript, and React. My expertise also includes database management, cloud deployment, and DevOps practices.
+            I am a Full-Stack Web Developer with expertise in C#, ASP.NET Core,
+            Entity Framework, and SQL Server for backend development. On the
+            frontend, I specialize in HTML, CSS, JavaScript, Vue.js, and
+            React.js to build responsive and interactive web applications.
+            <br/> 
+            With professional experience in JavaScript development, I have worked
+            extensively with HTML, CSS, JavaScript, React.js, HubSpot,
+            WordPress, and Wix. Additionally, I have hands-on experience in
+            database management, cloud deployment (AWS, Docker), and DevOps
+            practices (CI/CD) to streamline development and deployment
+            workflows.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
+              selectTab={() => handleTabChange('skills')}
+              active={tab === 'skills'}>
+              {' '}
+              Skills{' '}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
+              selectTab={() => handleTabChange('education')}
+              active={tab === 'education'}>
+              {' '}
+              Education{' '}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
+              selectTab={() => handleTabChange('certifications')}
+              active={tab === 'certifications'}>
+              {' '}
+              Certifications{' '}
             </TabButton>
           </div>
           <div className="mt-8">
@@ -122,7 +136,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  );
+  )
 };
 
 export default AboutSection;
