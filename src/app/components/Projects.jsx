@@ -7,50 +7,61 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "QuickResume (Resume Builder)",
-    techUsed: "ASP.NET Core 8 MVC, Entity Framework, SQL Server, QuestPDF",
-    image: "/images/projects/quickresume.png",
-    tag: ["All", "AspNet"],
-    gitUrl: "https://github.com/darel-mbokazi/QuickResume",
-    previewUrl: "",
+    title: 'QuickResume (Resume Builder)',
+    techUsed: 'ASP.NET Core 8 MVC, Entity Framework, SQL Server, QuestPDF',
+    image: '/images/projects/quickresume.png',
+    tag: ['All', 'AspNet'],
+    gitUrl: 'https://github.com/darel-mbokazi/QuickResume',
+    projectImages: [
+      '/images/projects/quickresume/qr-1.png',
+      '/images/projects/quickresume/qr-2.png',
+      '/images/projects/quickresume/qr-3.png',
+      '/images/projects/quickresume/qr-4.png',
+      '/images/projects/quickresume/qr-5.png',
+    ],
   },
   {
     id: 2,
-    title: "Product Listing & Management",
-    techUsed: "ASP.NET Core 8 Web API, Entity Framework, SQL Server, React, Typescript",
-    image: "/images/projects/product-list.png",
-    tag: ["All", "AspNet"],
-    gitUrl: "https://github.com/darel-mbokazi/Product-Listing-Management",
-    previewUrl: "",
+    title: 'Product Listing & Management',
+    techUsed:
+      'ASP.NET Core 8 Web API, Entity Framework, SQL Server, React, Typescript',
+    image: '/images/projects/product-list.png',
+    tag: ['All', 'AspNet'],
+    gitUrl: 'https://github.com/darel-mbokazi/Product-Listing-Management',
+    projectImages: [
+      '/images/projects/productlist/pl-1.png',
+      '/images/projects/productlist/pl-2.png',
+    ],
   },
   {
     id: 3,
-    title: "Private Property Frontend Clone",
-    techUsed: "React, Tailwind CSS, JavaScript",
-    image: "/images/projects/private_property.png",
-    tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/darel-mbokazi/Private-Property-Clone-App",
-    previewUrl: "https://private-property-clone.firebaseapp.com/",
+    title: 'Private Property Frontend Clone',
+    techUsed: 'React, Tailwind CSS, JavaScript',
+    image: '/images/projects/private_property.png',
+    tag: ['All', 'JavaScript'],
+    gitUrl: 'https://github.com/darel-mbokazi/Private-Property-Clone-App',
+    previewUrl: 'https://private-property-clone.firebaseapp.com/',
   },
   {
     id: 4,
-    title: "Web Hosting App",
-    techUsed: "React, Context API, Express.js, Stripe, Cloudmersive API, Whois API",
-    image: "/images/projects/wh-img-1.png",
-    tag: ["All", "JavaScript"],
-    gitUrl: "",
-    previewUrl: "https://web-hosting-react-app.firebaseapp.com/",
+    title: 'Web Hosting App',
+    techUsed:
+      'React, Context API, Express.js, Stripe, Cloudmersive API, Whois API',
+    image: '/images/projects/wh-img-1.png',
+    tag: ['All', 'JavaScript'],
+    gitUrl: '',
+    previewUrl: 'https://web-hosting-react-app.firebaseapp.com/',
   },
   {
     id: 5,
-    title: "Izinganekwane (The Folktales)",
-    techUsed: "Vite, React, Typescript, Tailwind CSS, Express, MongoDB",
-    image: "/images/projects/folktales.png",
-    tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/darel-mbokazi/izinganekwane_folktales",
-    previewUrl: "https://izinganekwane-folktales.vercel.app",
+    title: 'Izinganekwane (The Folktales)',
+    techUsed: 'React, Typescript, Tailwind CSS, Node.js, Express, MongoDB',
+    image: '/images/projects/folktales.png',
+    tag: ['All', 'JavaScript'],
+    gitUrl: 'https://github.com/darel-mbokazi/izinganekwane_folktales',
+    previewUrl: 'https://izinganekwane-folktales.vercel.app',
   },
-];
+]
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -75,7 +86,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-gold mt-16 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 max-sm:grid">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 w-1/2 m-auto ">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -89,7 +100,7 @@ const ProjectsSection = () => {
         <ProjectTag
           onClick={handleTagChange}
           name="JavaScript"
-          isSelected={tag === "Javascript"}
+          isSelected={tag === "JavaScript"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -105,9 +116,10 @@ const ProjectsSection = () => {
               key={project.id}
               title={project.title}
               techUsed={project.techUsed}
-              imgUrl={project.image}
+              image={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              projectImages={project.projectImages}
             />
           </motion.li>
         ))}

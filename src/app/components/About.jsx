@@ -25,13 +25,13 @@ const TAB_DATA = [
         <div className="max-sm:w-full max-sm:pb-5">
           <h2 className="bg-gold text-center rounded-md py-1 mb-3">Backend</h2>
           <ul>
+            <li>Node.js & Express</li>
             <li>C#</li>
             <li>ASP.NET Core</li>
             <li>Web APIs</li>
             <li>Entity Framework</li>
             <li>SQL Server</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
+            <li>Postgres & MySQL</li>
           </ul>
         </div>
         <hr className="border-[0.5px] h-52 max-sm:border-none" />
@@ -42,7 +42,7 @@ const TAB_DATA = [
             <li>Docker</li>
             <li>DevOps CI/CD</li>
             <li>Git & GitHub</li>
-            <li>Supabase</li>
+            <li>HubSpot</li>
             <li>WordPress</li>
             <li>Wix</li>
           </ul>
@@ -100,7 +100,7 @@ const AboutSection = () => {
           <p className="text-base max-sm:text-justify lg:text-lg">
             I am a Full-Stack Web Developer with expertise in C#, ASP.NET Core,
             Entity Framework, and SQL Server for backend development. On the
-            frontend, I specialize in HTML, CSS, JavaScript, Vue.js, and
+            frontend, I specialize in HTML, CSS, JavaScript, TypeScript, Vue.js, and
             React.js to build responsive and interactive web applications.
             <br/> <br/>
             With professional experience in JavaScript development, I have worked

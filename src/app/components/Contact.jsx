@@ -19,10 +19,10 @@ const Contact = () => {
             </div>
             <div className="socials flex flex-row gap-2">
               <a href="https://github.com/darel-mbokazi" target="_blank" rel="noopener noreferrer">
-                <FaSquareGithub className="w-6 h-6 hover:text-[#cbb36aa4] hover:transition-transform" />
+                <FaSquareGithub className="w-6 h-6 text-white hover:text-[#cbb36aa4] hover:transition-transform" />
               </a>
               <a href="https://www.linkedin.com/in/darel-mbokazi/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="w-6 h-6 hover:text-[#cbb36aa4]" />
+                <FaLinkedin className="w-6 h-6 text-white hover:text-[#cbb36aa4]" />
               </a>
             </div>
           </div>
