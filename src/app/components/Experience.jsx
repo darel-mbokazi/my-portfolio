@@ -12,7 +12,7 @@ const Experience = () => {
           'Debugged and troubleshot applications to ensure cross-browser and device compatibility.',
         ],
         startingDate: 'Nov, 2024',
-        endDate: 'Present',
+        endDate: 'Feb, 2025',
         techUsed: 'HTML, CSS, Javascript, React.js, HubSpot',
       },
       {

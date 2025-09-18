@@ -5,77 +5,67 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: 'Education',
+    id: 'education',
     content: (
-      <div className="flex max-sm:flex-wrap justify-between gap-5 max-sm:gap-0 list-disc pl-2">
-        <div className="max-sm:w-full max-sm:pb-5">
-          <h2 className="bg-gold text-center rounded-md py-1 mb-3">Frontend</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Vue.js</li>
-            <li>Next.js</li>
-            <li>Redux</li>
-          </ul>
-        </div>
-        <hr className="border-[0.5px] h-52 max-sm:border-none"/>
-        <div className="max-sm:w-full max-sm:pb-5">
-          <h2 className="bg-gold text-center rounded-md py-1 mb-3">Backend</h2>
-          <ul>
-            <li>Node.js & Express</li>
-            <li>C#</li>
-            <li>ASP.NET Core</li>
-            <li>Web APIs</li>
-            <li>Entity Framework</li>
-            <li>SQL Server</li>
-            <li>Postgres & MySQL</li>
-          </ul>
-        </div>
-        <hr className="border-[0.5px] h-52 max-sm:border-none" />
-        <div className="max-sm:w-full">
-          <h2 className="bg-gold text-center rounded-md py-1 mb-3">Other</h2>
-          <ul>
-            <li>AWS Cloud</li>
-            <li>Docker</li>
-            <li>DevOps CI/CD</li>
-            <li>Git & GitHub</li>
-            <li>HubSpot</li>
-            <li>WordPress</li>
-            <li>Wix</li>
-          </ul>
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2 grid gap-1 ml-3">
-        <li>Kanyekanye High School</li>
-        <li>University of KwaZulu Natal</li>
-        <li>Online Short Courses (Coursera & Udemy)</li>
+      <ul className="list-disc pl-5 space-y-2">
+        <li>
+          <span className="font-semibold">Kanyekanye High School</span>
+          <p className="text-sm text-gray-300">Matric Certificate</p>
+        </li>
+        <li>
+          <span className="font-semibold">University of KwaZulu Natal</span>
+          <p className="text-sm text-gray-300">
+            BSc Chemistry & Chemical Technology (Incomplete)
+          </p>
+        </li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: 'Certifications',
+    id: 'certifications',
     content: (
-      <ul className="list-disc pl-2 grid gap-1 ml-3">
-        <li>Complete C# Masterclass (Udemy)</li>
-        <li>AWS Cloud Practitioner (Coursera)</li>
-        <li>Full-Stack JavaScript Developer (Coursera)</li>
+      <ul className="list-disc pl-5 space-y-3">
+        <li>
+          <a
+            href="https://www.udemy.com/certificate/UC-f90bf6ae-64c6-4cf9-bfb6-acea5514f9af/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline font-semibold">
+            Complete C# Masterclass
+          </a>
+          <p className="text-sm text-gray-300">Udemy – Jul 2024</p>
+        </li>
+
+        <li>
+          <a
+            href="https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline font-semibold">
+            Full-Stack JavaScript Developer
+          </a>
+          <p className="text-sm text-gray-300">Coursera – Sep 2024</p>
+        </li>
+
+        <li>
+          <a
+            href="https://coursera.org/share/12c5192814596db60daec9fff2b040b6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline font-semibold">
+            AWS Cloud Practitioner
+          </a>
+          <p className="text-sm text-gray-300">Coursera – Oct 2024</p>
+        </li>
       </ul>
     ),
   },
-];
+]
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -98,25 +88,14 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <p className="text-base max-sm:text-justify lg:text-lg">
-            I am a Full-Stack Web Developer with expertise in C#, ASP.NET Core,
-            Entity Framework, and SQL Server for backend development. On the
-            frontend, I specialize in HTML, CSS, JavaScript, TypeScript, Vue.js, and
-            React.js to build responsive and interactive web applications.
-            <br/> <br/>
-            With professional experience in JavaScript development, I have worked
-            extensively with HTML, CSS, JavaScript, React.js, HubSpot,
-            WordPress, and Wix. Additionally, I have hands-on experience in
-            database management, cloud deployment (AWS, Docker), and DevOps
-            practices (CI/CD) to streamline development and deployment
-            workflows.
+            Full-Stack Web Developer with professional experience in JavaScript,
+            React.js, and Node.js, and practical project experience in C# and
+            ASP.NET Core. Skilled in building responsive web applications,
+            designing efficient APIs, and integrating databases. Strong
+            problem-solving skills with a foundation in agile methodologies and
+            cloud technologies (AWS).
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange('skills')}
-              active={tab === 'skills'}>
-              {' '}
-              Skills{' '}
-            </TabButton>
             <TabButton
               selectTab={() => handleTabChange('education')}
               active={tab === 'education'}>
