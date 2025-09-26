@@ -24,7 +24,7 @@ const projectsData = [
     id: 2,
     title: 'Web Hosting App',
     techUsed:
-      'Node.js, Express.js, MongoDB, React.js, Context API, Stripe, Cloudmersive API, Whois API',
+      'Node.js, Express.js, MongoDB, React.js, Stripe, Cloudmersive API, Whois API',
     image: '/images/projects/web-hosting.png',
     tag: ['All', 'JavaScript'],
     gitUrl: 'https://github.com/darel-mbokazi/web-hosting',
