@@ -22,16 +22,13 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'Product Listing & Management',
+    title: 'Web Hosting App',
     techUsed:
-      'ASP.NET Core 8 Web API, Entity Framework, SQL Server, React, Typescript',
-    image: '/images/projects/product-list.png',
-    tag: ['All', 'AspNet'],
-    gitUrl: 'https://github.com/darel-mbokazi/Product-Listing-Management',
-    projectImages: [
-      '/images/projects/productlist/pl-1.png',
-      '/images/projects/productlist/pl-2.png',
-    ],
+      'Node.js, Express.js, MongoDB, React.js, Context API, Stripe, Cloudmersive API, Whois API',
+    image: '/images/projects/web-hosting.png',
+    tag: ['All', 'JavaScript'],
+    gitUrl: 'https://github.com/darel-mbokazi/web-hosting',
+    previewUrl: 'https://web-hosting-frontend-react.vercel.app/',
   },
   {
     id: 3,
@@ -44,16 +41,6 @@ const projectsData = [
   },
   {
     id: 4,
-    title: 'Web Hosting App',
-    techUsed:
-      'React, Context API, Express.js, Stripe, Cloudmersive API, Whois API',
-    image: '/images/projects/wh-img-1.png',
-    tag: ['All', 'JavaScript'],
-    gitUrl: '',
-    previewUrl: 'https://web-hosting-react-app.firebaseapp.com/',
-  },
-  {
-    id: 5,
     title: 'Izinganekwane (The Folktales)',
     techUsed: 'React, Typescript, Tailwind CSS, Node.js, Express, MongoDB',
     image: '/images/projects/folktales.png',
@@ -61,6 +48,19 @@ const projectsData = [
     gitUrl: 'https://github.com/darel-mbokazi/izinganekwane_folktales',
     previewUrl: 'https://izinganekwane-folktales.vercel.app',
   },
+  {
+    id: 5,
+    title: 'Product Listing & Management',
+    techUsed:
+      'ASP.NET Core 8 Web API, Entity Framework, SQL Server, React, Typescript',
+    image: '/images/projects/product-list.png',
+    tag: ['All', 'AspNet'],
+    gitUrl: 'https://github.com/darel-mbokazi/Product-Listing-Management',
+    projectImages: [
+      '/images/projects/productlist/pl-1.png',
+      '/images/projects/productlist/pl-2.png',
+    ],
+  }
 ]
 
 const ProjectsSection = () => {
