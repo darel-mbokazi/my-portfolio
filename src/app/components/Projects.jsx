@@ -22,6 +22,16 @@ const projectsData = [
   },
   {
     id: 2,
+    title: 'Job Application App',
+    techUsed:
+      'Node.js, Express.js, PostgreSQL, Prisma, Cloudinary, React, Redux, React Query',
+    image: '/images/projects/job-application.png',
+    tag: ['All', 'JavaScript'],
+    gitUrl: 'https://github.com/darel-mbokazi/techcareers-frontend',
+    previewUrl: 'https://techcareers-frontend.onrender.com',
+  },
+  {
+    id: 3,
     title: 'Web Hosting App',
     techUsed:
       'Node.js, Express.js, MongoDB, React.js, Stripe, Cloudmersive API, Whois API',
@@ -31,7 +41,7 @@ const projectsData = [
     previewUrl: 'https://web-hosting-frontend-react.vercel.app/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Private Property Frontend Clone',
     techUsed: 'React, Tailwind CSS, JavaScript',
     image: '/images/projects/private_property.png',
@@ -40,7 +50,7 @@ const projectsData = [
     previewUrl: 'https://private-property-clone.firebaseapp.com/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Izinganekwane (The Folktales)',
     techUsed: 'React, Typescript, Tailwind CSS, Node.js, Express, MongoDB',
     image: '/images/projects/folktales.png',
@@ -49,7 +59,7 @@ const projectsData = [
     previewUrl: 'https://izinganekwane-folktales.vercel.app',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Product Listing & Management',
     techUsed:
       'ASP.NET Core 8 Web API, Entity Framework, SQL Server, React, Typescript',
@@ -60,7 +70,7 @@ const projectsData = [
       '/images/projects/productlist/pl-1.png',
       '/images/projects/productlist/pl-2.png',
     ],
-  }
+  },
 ]
 
 const ProjectsSection = () => {
