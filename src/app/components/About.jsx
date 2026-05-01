@@ -1,22 +1,28 @@
-"use client";
-import React, { useTransition, useState } from "react";
-import Image from "next/image";
-import TabButton from "./TabButton";
+'use client'
+import React, { useTransition, useState } from 'react'
+import Image from 'next/image'
+import TabButton from './TabButton'
 
 const TAB_DATA = [
   {
-    title: 'Education',
-    id: 'education',
+    title: 'Experience',
+    id: 'experience',
     content: (
-      <ul className="list-disc pl-5 space-y-2">
+      <ul className="list-disc pl-5 space-y-3">
         <li>
-          <span className="font-semibold">Kanyekanye High School</span>
-          <p className="text-sm text-gray-300">Matric Certificate</p>
+          <span className="font-semibold">Web Developer - HeyBassh</span>
+          <p className="text-sm text-gray-300">Nov 2024 – Feb 2025</p>
+          <p className="text-sm text-gray-400">
+            React.js, HTML/CSS, HubSpot CRM Integration
+          </p>
         </li>
         <li>
-          <span className="font-semibold">University of KwaZulu Natal</span>
-          <p className="text-sm text-gray-300">
-            BSc Chemistry & Chemical Technology (Incomplete)
+          <span className="font-semibold">
+            Freelance Web Designer & Developer - Growit MC
+          </span>
+          <p className="text-sm text-gray-300">Feb 2024 – Jun 2024</p>
+          <p className="text-sm text-gray-400">
+            Responsive Websites, UI/UX, Wix & WordPress
           </p>
         </li>
       </ul>
@@ -27,17 +33,6 @@ const TAB_DATA = [
     id: 'certifications',
     content: (
       <ul className="list-disc pl-5 space-y-3">
-        <li>
-          <a
-            href="https://www.udemy.com/certificate/UC-f90bf6ae-64c6-4cf9-bfb6-acea5514f9af/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline font-semibold">
-            Complete C# Masterclass
-          </a>
-          <p className="text-sm text-gray-300">Udemy – Jul 2024</p>
-        </li>
-
         <li>
           <a
             href="https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer"
@@ -65,42 +60,46 @@ const TAB_DATA = [
 ]
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("education");
-  const [isPending, startTransition] = useTransition();
+  const [tab, setTab] = useState('experience')
+  const [isPending, startTransition] = useTransition()
 
   const handleTabChange = (id) => {
     startTransition(() => {
-      setTab(id);
-    });
-  };
+      setTab(id)
+    })
+  }
 
   return (
     <section className="text-white max-sm:pt-20 max-lg:pt-20" id="about">
       <h2 className="text-4xl font-bold text-gold mb-4 text-center">
         About Me
       </h2>
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          src="/images/about-me-image.webp"
-          alt="about me image"
-          width={500}
-          height={500}
-        />
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16">
+        <div className="relative w-full aspect-video sm:aspect-4/3 md:aspect-3/4 lg:aspect-4/3 xl:aspect-video rounded-xl overflow-hidden">
+          <Image
+            src="/images/about-me-image.png"
+            alt="about me image"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
+          />
+        </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <p className="text-base max-sm:text-justify lg:text-lg">
-            Full-Stack Web Developer with professional experience in JavaScript,
-            React.js, and Node.js, and practical project experience in C# and
-            ASP.NET Core. Skilled in building responsive web applications,
-            designing efficient APIs, and integrating databases. Strong
-            problem-solving skills with a foundation in agile methodologies and
-            cloud technologies (AWS).
+            Full-Stack JavaScript Developer with hands-on experience building
+            modern web applications using React, Next.js, Node.js, and
+            PostgreSQL. Experienced in developing scalable front-end interfaces,
+            REST APIs, and integrating third-party services such as Stripe.
+            Passionate about cloud infrastructure, DevOps practices, and
+            building performant full-stack applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange('education')}
-              active={tab === 'education'}>
+              selectTab={() => handleTabChange('experience')}
+              active={tab === 'experience'}>
               {' '}
-              Education{' '}
+              Experience{' '}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange('certifications')}
@@ -116,6 +115,6 @@ const AboutSection = () => {
       </div>
     </section>
   )
-};
+}
 
-export default AboutSection;
+export default AboutSection
